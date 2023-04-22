@@ -15,8 +15,10 @@
                 {{ block "main" . }}{{ end }}
             </div>
 
-            {{ block "footer" . }}
-                {{ partial "footer.html" . }}
+            {{ if not (eq .Title "Digital Forays") }} <!-- Check if title is not "Home" -->
+                {{ block "footer" . }}
+                    {{ partial "footer.html" . }}
+                {{ end }}
             {{ end }}
         </div>
 
