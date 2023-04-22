@@ -14,9 +14,9 @@
             {{ partial "subtitle.html" . }}
         </div>
 
-        <div class="author">
-            Dr. Kevin Andrew Spicer
-        </div>"
+        <div class="author-container">
+            <h3>{{ .Site.Params.author }}</h3>
+        </div>
 
         <div class="social-icons">
             {{- with .Site.Params.social }}
